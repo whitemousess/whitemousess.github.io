@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>THE BAND</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/face.png">
     <link rel="stylesheet" href="./assets/css/style.css">
 <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
@@ -16,9 +17,9 @@
         <!-- begin: NAV -->
 <ul id="nav">
     <li><a href="">Trang Chủ</a></li>
-    <li><a href="">BAND</a></li>
-    <li><a href="">TOUR</a></li>
-    <li><a href="">Liên hệ</a></li>
+    <li><a href="#bgr-band">BAND</a></li>
+    <li><a href="#tour-section">TOUR</a></li>
+    <li><a href="#contact-section">Liên hệ</a></li>
     <li>
         <a href="#">
             MORE
@@ -26,9 +27,9 @@
         </a>
         
         <ul class="subnav">
-            <li><a href="">Chuột Bạch</a></li>
-            <li><a href="">Ngọc Thắng</a></li>
-            <li><a href="">Facebook</a></li>
+            <li><a href="#">Chuột Bạch</a></li>
+            <li><a href="#">Ngọc Thắng</a></li>
+            <li><a href="#">Facebook</a></li>
         </ul>
     </li>
 </ul>
@@ -94,7 +95,7 @@
                     <h3 class="place-heading">New York</h3>
                     <p class="place-time">Fri 27 Nov 2016</p>
                     <p class="place-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <button class="place-buy-btn js-buy-tickets">Buy Ticket</button>
+                    <button class="btn js-buy-tickets">Buy Ticket</button>
                 </div>
             </div>
 
@@ -105,7 +106,7 @@
                         <h3 class="place-heading">Paris</h3>
                         <p class="place-time">Sat 28 Nov 2016</p>
                         <p class="place-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <button class="place-buy-btn js-buy-tickets">Buy Ticket</button>
+                    <button class="btn js-buy-tickets">Buy Ticket</button>
                     </div>
         </div>
             
@@ -116,7 +117,7 @@
                     <h3 class="place-heading">San Francisco</h3>
                     <p class="place-time">Sun 29 Nov 2016</p>
                     <p class="place-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <button class="place-buy-btn js-buy-tickets">Buy Ticket</button>
+                    <button class="btn js-buy-tickets">Buy Ticket</button>
               </div>
         </div>
 
@@ -127,16 +128,61 @@
     </div>
     <div class="clear"></div>
 </div>
-<!-- contact -->
-<div id="contact-section">
+<!--BEGIN contact -->
+    <div id="contact-section">
     <div class="section-content">
         <h2 class="section-heading">CONTACT</h2>
         <p class="section-subheading">Fan? Drop a note!</p>
+
+        <div class="row contact-content">
+            <div class="col col-2 contact-info">
+                <p><i class="ti-location-pin"></i>Chicago,US</p>
+                <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                <p><i class="ti-email"></i>Email: mail@mail.com</p>
+            </div>
+
+            <div class="col col-2 contact-form">
+                <form action="">
+                    <div class="row">
+                        <div class="col col-2">
+                            <input type="text" required name="" placeholder="Name" id="" class="ol form-control">
+                        </div>  
+                        
+                        <div class="col col-2" >
+                            <input type="email" required name="" placeholder="Email" id="" class="ol form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-full mt-8">
+                            <input type="text" required name="" placeholder="Message" id="" class="ol form-control">
+                            <input type="submit" name="" value="SEND" class="pull-right btn mt-16 btn">
+                        </div>
+                    </div>
+                </div>                
+            </form>
+                
+            </div>
+        </div>
     </div>
-</div>
+
+<!--END contact -->
+
+    <div class="map-section">
+        <img src="./assets/img/map.jpg" alt="">
+    </div>
+    </div>
 
     <div id="footer">
-
+    <div class="social-list text-center">
+        <a href=""><i class="ti-facebook"></i></a>
+        <a href=""><i class="ti-instagram"></i></a>
+        <a href=""><i class="ti-youtube"></i></a>
+        <a href=""><i class="ti-pinterest"></i></a>
+        <a href=""><i class="ti-twitter"></i></a>
+        <a href=""><i class="ti-linkedin"></i></a>
+    </div>
+    <p class="coppyright text-center">Powered by <a href="">w3.css</a></p>
     </div>
 
 </div>
@@ -159,13 +205,13 @@
                 Mua được thì mua không được thì mua!!
                 
             </label>
-            <input id="quantity" type="text" class="modal-input" placeholder="Cho cái giá phải trả?">
+            <input id="quantity" type="text" class="ol modal-input" placeholder="Cho cái giá phải trả?">
 
             <label for="diachi" class="modal-label">
                 <i class="ti-user"></i>
                 Gửi cho 
                 </label>
-            <input id="diachi" type="text" class="modal-input" placeholder="Địa chỉ liên hệ">
+            <input id="diachi" type="text" class="ol modal-input" placeholder="Địa chỉ liên hệ">
 
             <button id="buy-tickets">
                 Pay <i class="ti-check"></i>
