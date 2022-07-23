@@ -22,8 +22,6 @@
     clear: both;
 }
 
-.text-center
-
 .row{
     margin-left: -8px;
     margin-right: -8px;
@@ -279,9 +277,10 @@ margin-top: 48px;
     border-radius: 4px;
 }
 
-#content .member-item img:hover{
-    background-color: #333;
-    opacity: 50%;
+
+
+#content .member img:hover{
+    opacity: .8;
  }
 
 #content .member-name{
@@ -502,7 +501,8 @@ font-weight: 600;
 }
 
 .contact-form .form-control{
-    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: 1px solid rgb(136, 136, 136);
     padding: 10px;
     width: 100%;
 }
@@ -520,12 +520,10 @@ font-weight: 600;
     font-size: 24px;
 }
 
-#footer .social-list{
-    font-size: 24px;
-}
-
 #footer .social-list a{
-    color: rgba(0, 0, 0, 0.6)
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;    
+    background-color: #ccc;
 }
 #footer .coppyright a:hover,
 #footer .social-list a:hover{

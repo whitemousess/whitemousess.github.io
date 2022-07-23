@@ -46,12 +46,31 @@
     #nav .subnav{
         position: initial;
         background-color: #333;
-        overflow: hidden;
+        padding-right: 1000px;
     }
 
     #nav .subnav a{
         color: #fff;
         padding: 5px 40px;
     }
+
+    #nav .subnav a:hover{
+        width: 100%;
+        background-color: #333;
+    }
+
+    #content .member img{
+        height: 60%;
+    }
+
+    .place-content{
+        margin: 0 0 16px 0;
+    }
+
+    .col{
+        float: initial;
+        width: 100%;
+    }
+
 
 }
