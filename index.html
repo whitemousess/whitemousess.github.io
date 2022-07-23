@@ -7,6 +7,7 @@
     <title>THE BAND</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/face.png">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/respon.css">
 <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -38,6 +39,9 @@
         <!-- BEGIN :search -->
 <div class="search-btn">
   <i class="search-icons ti-search"></i>
+</div>
+<div class="mobile-meunu-btn">
+    <i id="mobile-menu" class="menu-icon ti-menu"></i>
 </div>
         <!-- END :search -->
     </div>
@@ -256,6 +260,36 @@
         event.stopPropagation()
     })
 
+    var header = document.getElementById('header');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var headerHeight = header.clientHeight;
+
+    //close/open menu icon mobile
+    mobileMenu.onclick = function(){
+        var isClosed = header.clientHeight === headerHeight;
+        if(isClosed){
+            header.style.height = 'auto';
+        }
+        else{
+            header.style.height = null;
+        }
+    }
+
+    //auto closed when clicking
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for(var i =0; i<menuItems.length; i++){
+        var menuItem = menuItems[i];
+        
+        menuItem.onclick = function(event){
+        var isParentMenu = this.nextElementSibling
+        && this.nextElementSibling.classList.contains('subnav');
+        if(isParentMenu){
+            event.preventDefault();
+        }else{
+            header.style.height = null;
+        }
+        }
+    }
 </script>
 </body>
 </html>

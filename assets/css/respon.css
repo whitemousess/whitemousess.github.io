@@ -1,0 +1,57 @@
+/*PC*/
+@media (min-width: 960px){
+    
+}
+/*TABLEt*/
+@media (min-width: 740px) and (max-width:959px){
+    
+}
+/*Mobile*/
+@media (max-width: 739px){
+    #header{
+        overflow: hidden;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+
+    #header .mobile-meunu-btn{
+        display: block;
+    }
+
+    #nav{
+        display: block;
+    } 
+
+
+    #nav > li {
+        display: block;
+    } 
+
+    #nav > li:hover > a{
+        color: #000;
+        background-color: #ccc;
+    }
+
+    #nav li a{
+        padding: 1px 24px;
+        display: block;
+    }
+           
+    #nav > li:first-child{
+        display: inline-block;
+    }  
+
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 40px;
+    }
+
+}
