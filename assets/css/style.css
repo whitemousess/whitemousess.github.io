@@ -207,7 +207,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-top: 46px;
     padding-top: 43.65%;
     background: url('https://github.com/whitemousess/whitemousess.github.io/blob/main/assets/img/slider/slider1.png?raw=true') top center/ cover no-repeat;
-background-color: rgba(0 , 0, 0, 0.2);
+    background-color: rgba(0 , 0, 0, 0.2);;
 }
 
 #slider .text-content{
@@ -269,12 +269,12 @@ line-height: 1.4;
 }
 
 #content .member{
-margin-top: 48px;
+margin-top: 32px;
 }
 
 #content .member img{
-    height: 154px;
-    border-radius: 4px;
+    width: 154px;
+    border-radius: 7px;
 }
 
 
@@ -520,11 +520,11 @@ font-weight: 600;
     font-size: 24px;
 }
 
+#footer .coppyright a,
 #footer .social-list a{
     color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;    
-    background-color: #ccc;
 }
+
 #footer .coppyright a:hover,
 #footer .social-list a:hover{
     color: rgba(0, 0, 0, 0.4)
@@ -535,7 +535,5 @@ font-weight: 600;
     color: rgba(0, 0, 0, 0.6)
 }
 
-#footer .coppyright a{
-    color: rgba(0, 0, 0, 0.6)
-}
+
 
