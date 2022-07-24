@@ -112,12 +112,13 @@ z-index: 1;
 }
 
 #nav > li:hover > a{
+    width: sss;
     color: #000;
     background-color: #ccc;
 }
 
 #nav li:hover a{
-display: inline-block;
+display: block;
 }
 
 #nav li {
@@ -150,7 +151,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #nav .subnav li{
-    min-width: 190px;
+    width: 100%;
 }
 
 #nav .subnav li:hover{
