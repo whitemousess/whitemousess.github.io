@@ -166,14 +166,14 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     line-height: 38px;
 }
 
-#header .mobile-meunu-btn{
+#mobile-menu-btn{
     display: none;
     position: absolute;
     top: 0;
     right: 0;
 }
 
-#header .mobile-meunu-btn,
+#mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
@@ -184,11 +184,11 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: rgba(255 , 50 , 50 , 0.5);
 }
 
-#header .mobile-meunu-btn:hover{
+#mobile-menu-btn:hover{
     background-color: rgba(204, 204, 204 , .8);
 }
 
-#header .mobile-meunu-btn:hover .menu-icon{
+#mobile-menu-btn:hover .menu-icon{
     color: #000;
 }
 
