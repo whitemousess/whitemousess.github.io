@@ -1,0 +1,37 @@
+
+
+.mr16{
+   margin-right: 16px; 
+}
+
+.text-align{
+    text-align: center;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.col-3{
+    width: 33.333333%;
+}
+
+.br50{
+    border-radius: 50px;
+}
+
+.btn{
+cursor: pointer;
+border: none;
+ color: #fff;
+ background-color: #000;
+ padding: 8px 18px;
+ text-decoration: none;
+ appearance: none;
+ -webkit-appearance: none;
+}
+
+.pull-right{
+    float: right !important;
+}
+
