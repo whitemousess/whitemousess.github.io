@@ -1,20 +1,20 @@
 /*PC*/
-@media (min-width: 60em){
+@media (min-width: 960px){
     
 }
 
 /*tablet & mobile*/
 /*TABLEt*/
-@media (max-width: 59.9375em){
+@media (max-width: 959px){
     
 }
 
 /*TABLEt*/
-@media (min-width: 47em) and (max-width:59em){
+@media (min-width: 740px) and (max-width:959px){
     
 }
 /*Mobile*/
-@media (max-width: 740px){
+@media (max-width: 739px){
     #header{
         overflow: hidden;
     }
