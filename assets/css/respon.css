@@ -14,7 +14,7 @@
     
 }
 /*Mobile*/
-@media (max-width: 739px){
+@media screen and (max-width: 739px){
     #header{
         overflow: hidden;
     }
