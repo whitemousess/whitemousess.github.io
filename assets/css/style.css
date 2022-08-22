@@ -181,3 +181,73 @@ font-size: 24px;
   text-align: center;
 }
 
+.modalPinh{
+  display: none;
+}
+
+.modalPinh.open{
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 100px;
+  background-color: rgba(0 ,0, 0 ,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalAn{
+  display: none;
+}
+
+.modalAn.open{
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 100px;
+  background-color: rgba(0 ,0, 0 ,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moder-header{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #009688;
+  color: #fff;
+  font-size: 30px;
+}
+
+.modal-container{
+  background: #fff;
+  width: 900px;
+  max-width: calc(100% - 32px);
+  min-height: 200px;
+  position: relative;
+  animation: modalFaceIn ease .35s;
+}
+
+.modal-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.modal-close:hover{
+  opacity: 1;
+}
+
+.modal-body{
+  padding: 16px;
+}
