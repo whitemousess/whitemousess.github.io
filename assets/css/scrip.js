@@ -28,30 +28,50 @@ var mobileMenu = document.getElementById('mobile-menu-btn');
         }
     }
 
-    const buyBtns = document.querySelectorAll('.js-buy-tickets')
-    const modal = document.querySelector('.js-modal')
+    const btnPinhs = document.querySelectorAll('.js-btnPinh')
+    const modalPinh = document.querySelector('.js-Pinh')
     const modalcontainer = document.querySelector('.js-modal-container')
     const modalclose = document.querySelector('.js-modal-close')
 
     //hiển thị mua ticket
-    function showBuyTickets(){
-        modal.classList.add('open')
+    function ShowImgPinh(){
+        modalPinh.classList.add('open')
     }
     //ẩn thị mua ticket
-    function hideBuyTickets(){
-        modal.classList.remove('open')
+    function hideImgPinh(){
+        modalPinh.classList.remove('open')
     }
- 
+
     //vòng lặp nghe hành vi
-    for (const buyBtn of buyBtns) {
-        buyBtn.addEventListener('click', showBuyTickets)
+    for (const btnPinh of btnPinhs) {
+        btnPinh.addEventListener('click', ShowImgPinh)
     }
      
     //nghe hành vi click
-    modalclose.addEventListener('click', hideBuyTickets)
+    modalclose.addEventListener('click', hideImgPinh)
 
-    modal.addEventListener('click', hideBuyTickets)
+    modalPinh.addEventListener('click', hideImgPinh)
 
     modalcontainer.addEventListener('click', function (event){
         event.stopPropagation()
     })
+
+    /////////////////JavaScrip an////////////////////////////
+    const btnAns = document.querySelectorAll('.js-btnAn')
+    const modalAn = document.querySelector('.js-An')
+
+    //hiển thị mua ticket
+    function ShowImgAn(){
+        modalAn.classList.add('open')
+    }
+    //ẩn thị mua ticket
+    function hideBuyTickets(){
+        modalAn.classList.remove('open')
+    }
+
+    //vòng lặp nghe hành vi
+    for (const btnAn of btnAns) {
+        btnAn.addEventListener('click', ShowImgAn)
+    }
+
+    modalAn.addEventListener('click', hideBuyTickets)
