@@ -5,7 +5,11 @@
     }
 
     .modalAn{
-        min-height: 1200px;
+        min-height: 1427px;
+    }
+
+    .modalPinh{
+        min-height: 1427px;
     }
 }
 
