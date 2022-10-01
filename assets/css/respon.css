@@ -3,6 +3,10 @@
     #nav .hide {
         display: block;
     }
+
+    .modalAn{
+        min-height: 1200px;
+    }
 }
 
 /*tablet & mobile*/
