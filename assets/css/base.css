@@ -25,7 +25,6 @@
   background-color: #000;
   padding: 8px 18px;
   text-decoration: none;
-
   appearance: none;
   -webkit-appearance: none;
 }
@@ -53,6 +52,7 @@
 
 a {
   color: #fff;
+  cursor: initial;
 }
 
 .s-full-width {
@@ -65,6 +65,7 @@ a {
 /*           MODAL   IMAGE               */
 .container {
   width: 85%;
+  margin-top: 72px;
 }
 
 .moder-header {
