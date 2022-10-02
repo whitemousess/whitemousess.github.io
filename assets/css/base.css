@@ -30,6 +30,23 @@
   -webkit-appearance: none;
 }
 
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.col {
+  padding: 8px;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
 .pull-right {
   float: right !important;
 }
@@ -38,6 +55,14 @@ a {
   color: #fff;
 }
 
+.s-full-width {
+  width: 100%;
+}
+
+.cp {
+  cursor: pointer;
+}
+/*           MODAL   IMAGE               */
 .container {
   width: 85%;
 }
@@ -51,8 +76,9 @@ a {
   padding: 18px 22px;
   color: #fff;
   font-size: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-
 
 .modal-body-img {
   min-height: 350px;
@@ -60,11 +86,13 @@ a {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: rgb(43, 100, 107);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .body-img img {
   margin-top: 25px;
   border-radius: 10px;
-  box-shadow: 4px 3px rgba(0, 0, 0, .3);
+  box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.3);
   height: 300px;
 }

@@ -33,27 +33,58 @@ var btnOpenAn = document.querySelector(".open-modal-btn-An")
 var iconclose = document.querySelector(".modal-close-An")
 
 function toggleModal(e) {
-    modalAn.classList.toggle('hideAn')
+    modalAn.classList.toggle('hide-An')
 }
 
 btnOpenAn.addEventListener('click', toggleModal);
 iconclose.addEventListener('click', toggleModal);
 modalAn.addEventListener("click", (e) => {
     if (e.target == e.currentTarget) toggleModal();
-  });
-  }
+  });}
+  
 // //////////////////////////Pinh///////////////////////
 {var modalPinh = document.querySelector('.modalPinh');
 var btnOpenPinh = document.querySelector(".open-modal-btn-Pinh");
 var iconclose = document.querySelector(".modal-close-Pinh");
 
 function toggleModal(e){
-    modalPinh.classList.toggle('hidePinh')
+    modalPinh.classList.toggle('hide-Pinh')
 }
 
 iconclose.addEventListener('click', toggleModal);
 btnOpenPinh.addEventListener('click', toggleModal);
 modalPinh.addEventListener("click", (e) => {
+    if (e.target == e.currentTarget) toggleModal();
+  });}
+
+
+// //////////////////////////LOGIN///////////////////////
+{var modalLogin = document.querySelector('.modal-login');
+var btnOpenLogin = document.querySelector(".open-btn-login")
+
+function toggleModal(e) {
+    modalLogin.classList.toggle('hide-Login')
+}
+
+
+btnOpenLogin.addEventListener('click', toggleModal);
+
+modalLogin.addEventListener("click", (e) => {
+    if (e.target == e.currentTarget) toggleModal();
+  });
+}
+
+{var modalsignup = document.querySelector('.modal-SignUp');
+var btnOpensignup = document.querySelector(".open-btn-signup")
+
+function toggleModal(e) {
+    modalsignup.classList.toggle('hide-signup')
+}
+
+
+btnOpensignup.addEventListener('click', toggleModal);
+
+modalsignup.addEventListener("click", (e) => {
     if (e.target == e.currentTarget) toggleModal();
   });
 }

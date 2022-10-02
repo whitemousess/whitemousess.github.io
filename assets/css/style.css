@@ -175,6 +175,7 @@ html {
   font-size: 48px;
   font-weight: 700;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .wrap-layout__item p {
@@ -184,7 +185,6 @@ html {
 
 .modalAn {
   width: 100%;
-
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
@@ -213,10 +213,98 @@ html {
   justify-content: center;
 }
 
-.hideAn{
+.modal-login {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-SignUp {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide-An{
   display: none;
 }
 
-.hidePinh{
+.hide-Pinh{
+  display: none;
+}
+
+/* login */
+.container-sign {
+  box-shadow: 4px 3px 30px rgba(0, 0, 0, .3);
+}
+
+.modal_header {
+  display: flex;
+  justify-content: center;
+  line-height: 32px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #4267B2;
+  padding: 18px 22px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.modal_body {
+  min-height: 170px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.account {
+  text-align: center;
+  padding: 6px;
+}
+
+.account ul li {
+  display: inline-block;
+  margin-top: 10px;
+  min-width: 80px;
+}
+
+.input-account {
+  border-radius: 10px;
+  border: 1px solid rgb(136, 136, 136);
+  padding: 10px;
+  width: 100%;
+}
+
+.btn-login {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  color: #fff;
+  background-color: #4267B2;
+  padding: 8px 16px;
+  text-decoration: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.hide-Login {
+  display: none;
+}
+
+.hide-signup {
   display: none;
 }

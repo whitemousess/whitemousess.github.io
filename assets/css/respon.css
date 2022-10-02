@@ -1,15 +1,19 @@
 /*PC*/
 @media (min-width: 960px) {
+
+    
     #nav .hide {
         display: block;
     }
 
-    .modalAn{
-        min-height: 1427px;
+    .modalAn {
+        min-height: 1020px;
+        position: fixed;
     }
 
-    .modalPinh{
-        min-height: 1427px;
+    .modalPinh {
+        min-height: 1020PX;
+        position: fixed;
     }
 }
 
@@ -32,6 +36,7 @@
 
     #header {
         overflow: hidden;
+        position: relative;
     }
 
     #header .search-btn {
@@ -80,8 +85,9 @@
         display: block;
     }
 
+
     .container {
-        margin-top: 1202px;
+        margin-top: 1200px;
     }
 
     .modal-close {
@@ -95,7 +101,7 @@
         background-color: rgb(43, 100, 107);
     }
 
-    .modal-body-img img{
+    .modal-body-img img {
         padding-top: 5px;
         border-radius: 10px;
         box-shadow: 4px 3px rgba(0, 0, 0, .3);

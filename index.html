@@ -34,10 +34,10 @@
                 </ul>
             </li>
             <li>
-                <button class="btn ml16 br50"><i class="ti-user"></i> Đăng nhập</button>
+                <button class="btn ml16 br50 open-btn-login"><i class="ti-user"></i> SIGN IN</button>
             </li>
             <li>
-                <button class="btn ml16 br50"><i class="ti-user"></i> Đăng Ký</button>
+                <button class="btn ml16 br50 open-btn-signup"><i class="ti-user"></i> SIGN UP</button>
             </li>
         </ul>
         <div id="mobile-menu-btn">
@@ -59,20 +59,20 @@
         <div id="list-album">
             <h1 class="text-align">ALBUM</h1>
             <div class="wrap-layout">
-                <div class="wrap-layout__item text-align">
-                    <a href="#"><img class="open-modal-btn-An js-btnAn" src="./assets/img/album/album-1.png" alt=""></a>
+                <div class="wrap-layout__item text-align open-modal-btn-An body-img">
+                    <a href="#"><img class="br50" src="./assets/img/album/album-1.png" alt=""></a>
                     <p class="mt-16">An mạt loàn</p>
-                    <a href="#"><button class="open-modal-btn-An btn br50">MORE IMAGE</button></a>
+                    <button class="btn br50"><a href="#">MORE IMAGE</a></button>
                 </div>
-                <div class="wrap-layout__item text-align">
-                    <img src="./assets/img/album/album-2.png" alt="">
+                <div class="wrap-layout__item text-align body-img">
+                    <img class="br50" src="./assets/img/album/album-2.png" alt="">
                     <p class="mt-16">Chính chủ</p>
                     <button class="btn br50 ">MORE IMAGE</button>
                 </div>
-                <div class="wrap-layout__item text-align">
-                    <a href="#"><img class="open-modal-btn-Pinh js-btnPinh" src="./assets/img/album/album-3.png" alt=""></a>
+                <div class="wrap-layout__item text-align open-modal-btn-Pinh body-img">
+                    <a href="#"><img class="br50 " src="./assets/img/album/album-3.png" alt=""></a>
                     <p class="mt-16">Pình Quen Doctor Trang</p>
-                    <button class="open-modal-btn-Pinh btn br50"><a href="#">MORE IMAGE</a></button>
+                    <button class="btn br50"><a href="#">MORE IMAGE</a></button>
                 </div>
             </div>
         </div>
@@ -80,12 +80,15 @@
 
     <div id="footer"></div>
 
-    <div class="modalAn hideAn">
+
+
+    <!------------------ MODAL HIDE IN WEB  ------------------>
+    <div class="modalAn hide-An">
         <div class="container">
-            
+
             <div class="moder-header">
                 <h3>An mạt loàn</h3>
-                <i class="modal-close-An ti-close"></i>
+                <i class="modal-close-An cp ti-close"></i>
             </div>
             <div class="modal-body">
                 <div class="modal-body-img">
@@ -108,14 +111,14 @@
             </div>
         </div>
     </div>
-   
-   
-   
-    <div class="modalPinh hidePinh">
+
+
+
+    <div class="modalPinh hide-Pinh">
         <div class="container">
             <div class="moder-header">
                 <h3>Pình Tomy</h3>
-                <div class="modal-close-Pinh"><i class="ti-close"></i></div>
+                <div class="modal-close-Pinh cp"><i class="ti-close"></i></div>
             </div>
             <div class="modal-body">
                 <div class="modal-body-img">
@@ -138,8 +141,76 @@
             </div>
         </div>
     </div>
-    <script src="./assets/css/scrip.js"></script>
+    <!----------------------- MODAL SIGN IN  ----------------------->
+    <div class="modal-login hide-Login">
+        <div class="container-sign">
+            <div class="modal_header">
+                <h3>SIGN IN</h3>
+            </div>
+            <div class="modal_body">
+                <div class="account">
+                    <ul class="account">
+                        <li>
+                            <h4>Tài Khoản</h4>
+                        </li>
+                        <li><input type="text" name="taikhoan" required class="input-account" placeholder="Tài Khoản">
+                        </li>
+                    </ul>
+                    <ul class="account">
+                        <li>
+                            <h4>Mật Khẩu</h4>
+                        </li>
+                        <li><input type="password" name="matkhau" required class="input-account" placeholder="Mật Khẩu">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-full mt-8">
+                    <input type="submit" name="" value="LOGIN" class="btn-login s-full-width">
+                </div>
+            </div>
+            <div class="modal_footer"></div>
+        </div>
+    </div>
+
+    <div class="modal-SignUp hide-signup">
+        <div class="container-sign">
+            <div class="modal_header">
+                <h3>SIGN UP</h3>
+            </div>
+            <div class="modal_body">
+                <div class="account">
+                    <ul class="account">
+                        <li>
+                            <h4>Tài Khoản</h4>
+                        </li>
+                        <li><input type="text" name="taikhoan" required class="input-account" placeholder="Tài Khoản">
+                        </li>
+                    </ul>
+                    <ul class="account">
+                        <li>
+                            <h4>Mật Khẩu</h4>
+                        </li>
+                        <li><input type="password" name="matkhau" required class="input-account" placeholder="Mật Khẩu">
+                        </li>
+                    </ul>
+                    <ul class="account">
+                        <li>
+                            <h4>Gmail</h4>
+                        </li>
+                        <li><input type="text" name="gmail" required class="input-account" placeholder="Gmail">
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="col col-full ">
+                    <input type="submit" name="" value="SIGN UP" class="btn-login s-full-width">
+                </div>
+            </div>
+            <div class="modal_footer"></div>
+        </div>
+    </div>
 
 </body>
+<script src="./assets/css/scrip.js"></script>
 
 </html>
