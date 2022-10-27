@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../public/css/respon.css">
+    <title>Log In</title>
+</head>
+<body>
+<div class="authenticator">
+        <div class="container-auth">
+            <div class="modal_header">
+                <h3>SIGN IN</h3>
+            </div>
+            <div class="modal_body">
+                <div class="account">
+                    <ul class="account">
+                        <li>
+                            <h4>Tài Khoản</h4>
+                        </li>
+                        <li><input type="text" name="taikhoan" required class="input-account" placeholder="Tài Khoản">
+                        </li>
+                    </ul>
+                    <ul class="account">
+                        <li>
+                            <h4>Mật Khẩu</h4>
+                        </li>
+                        <li><input type="password" name="matkhau" required class="input-account" placeholder="Mật Khẩu">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-full mt-8">
+                    <input type="submit" name="" value="LOGIN" class="btn-login s-full-width">
+                </div>
+            </div>
+            <div class="modal_footer"></div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="../../public/css/scrip.js"></script>
+
+</html>

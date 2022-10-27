@@ -207,34 +207,21 @@ html {
   justify-content: center;
 }
 
-.modal-login {
+.authenticator {
   width: 100%;
   position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-SignUp {
-  width: 100%;
-  position: fixed;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(14, 163, 250, 0.726);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hide-An{
-  display: none !important;
+  display: none;
 }
 
 .hide-Pinh{
@@ -242,8 +229,9 @@ html {
 }
 
 /* login */
-.container-sign {
+.container-auth {
   box-shadow: 4px 3px 30px rgba(0, 0, 0, .3);
+  min-width: 600px;
 }
 
 .modal_header {
